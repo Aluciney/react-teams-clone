@@ -1,12 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-	* {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	}
-
 	:root {
 		--primary: #1f1f1f;
 		--secondary: #141414;
@@ -26,4 +20,27 @@ export default createGlobalStyle`
 		--link: #5d80d6;
 		--rocketseat: #6633cc;
 	}
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body, input, button, textarea {
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	}
+
+	button {
+		background: none;
+		border: 0px;
+		cursor: pointer;
+	}
+
+	a, button {
+		text-decoration: none;
+		:focus {
+			outline: 0px;
+		}
+	}	
 `;
