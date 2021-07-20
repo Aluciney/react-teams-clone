@@ -27,6 +27,7 @@ export const NavButton = styled.button`
 
 	&:hover:not(:disabled) {
 		svg {
+			transform: scale(1.1);
 			color: #FFF;
 		}
 	}

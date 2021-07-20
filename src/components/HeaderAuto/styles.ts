@@ -12,6 +12,7 @@ export const Container = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  -webkit-app-region: drag;
 `;
 
 export const SearchContainer = styled.div`
@@ -53,6 +54,7 @@ export const WindowsButton = styled.button<Props>`
   justify-content: center;
   min-width: 45px;
   height: 100%;
+  -webkit-app-region: no-drag;
   svg {
     color: #FFF;
     font-size: 19px;
@@ -68,6 +70,7 @@ export const EllipsisButton = styled.button`
   justify-content: center;
   min-width: 45px;
   height: 100%;
+  -webkit-app-region: no-drag;
   svg {
     color: #c7c7c7;
     font-size: 19px;
@@ -83,10 +86,16 @@ export const TextInput = styled.input`
   color: #FFF;
   font-size: 14px;
   width: 100%;
+  -webkit-app-region: no-drag;
   ::placeholder {
     color: #8c8c8c;
   }
   :focus {
     outline: 0px;
+  }
+  :hover:not(:focus) {
+    ::placeholder {
+      color: #c7c7c7;
+    }
   }
 `;
