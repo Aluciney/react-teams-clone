@@ -1,4 +1,4 @@
-## Temas Clone - Electron + TypeScript + React
+## Microsoft Teams Clone - Electron + TypeScript + React
 
 Boilerplate for a project using Electron, React and Typescript.
 
